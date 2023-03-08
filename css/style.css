@@ -67,6 +67,62 @@
     opacity: 1;
 }
 
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.topbar {
+    background: #3985d1;
+    height: 40px;
+    font-size: 14px;
+    transition: all 0.5s;
+    color: #fff;
+    padding: 0;
+}
+
+.topbar .contact-info i {
+    font-style: normal;
+    color: #fff;
+    line-height: 0;
+}
+
+.topbar .contact-info i a,
+.topbar .contact-info i span {
+    padding-left: 5px;
+    color: #fff;
+}
+
+@media (max-width: 575px) {
+
+    .topbar .contact-info i a,
+    .topbar .contact-info i span {
+        font-size: 13px;
+    }
+
+    .header .logo h1 {
+        font-size: 20px !important;
+    }
+}
+
+.topbar .contact-info i a {
+    line-height: 0;
+    transition: 0.3s;
+}
+
+.topbar .contact-info i a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.topbar .social-links a {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 0;
+    transition: 0.3s;
+    margin-left: 20px;
+}
+
+.topbar .social-links a:hover {
+    color: #fff;
+}
 
 /*** Button ***/
 .btn {
@@ -439,4 +495,8 @@ form label {
     padding: 8px 0;
     font-size: 1rem !important;
     color: #000;
+}
+
+.justify-text {
+    text-align: justify !important;
 }
